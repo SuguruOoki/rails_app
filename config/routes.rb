@@ -54,5 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   #root 'application#hello'
-  root 'application#goodbye'
+  #root 'application#goodbye'
+  get 'boards' => 'boards#index'
+  get 'boards/new' => 'boards#new'
 end
